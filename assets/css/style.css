@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* ---------------------------------------------header*/
+
+body {
+    font-family: "Exo";
+    color: #777777;
+}
+
+h1{
+    font-family: "Exo";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #555555;
+    padding-left: 15px;
+}
+
+#logo{
+    float: left;
+    font-size: 280%;
+}
+
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+#logo, #menu{
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #777777;
+}
+
+.active {
+    border-bottom: 1px solid #777777;
+}
+
+/* ---------------------------------------------hero image*/
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url("../images/quarry3.jpg") no-repeat center center;
+    background-size: cover;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1)
+    }
+}
+
+/* ---------------------------------------------main-body*/
+
+h3 {
+    padding-top: 25px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.meet {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.about {
+    padding-bottom: 25px;
+    background-color: #D1cccb;
+    color: #000000;
+}
+
+.meet-all {
+    background-color: #c7c1c0;
+    color: #000000;
+}
+
+/* ---------------------------------------------footer*/
+
+footer {
+    color: #fafafa;
+    padding-top: 25px;
+    background-color: #000000;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    color: #fafafa;
+    text-align: center;
+}
+
+.social-links {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* ---------------------------------------------Media Queries*/
+
+.table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #c7c1c0;
+    color: #000000;
+    border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.product-heading {
+    color: #000000;
+}
+
+.product-disclaimer {
+    color: #f88037;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* ---------------------------------------------main-body*/
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+
