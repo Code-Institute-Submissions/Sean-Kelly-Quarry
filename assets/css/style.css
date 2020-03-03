@@ -81,7 +81,7 @@ h1{
     }
 }
 
-/* ---------------------------------------------main-body*/
+/* ---------------------------------------------about/meet*/
 
 h3 {
     padding-top: 25px;
@@ -97,7 +97,7 @@ img {
 }
 
 .meet {
-    text-align: left;
+    text-align: center;
     padding-left: 20px;
 }
 
@@ -126,7 +126,7 @@ footer {
     text-transform: uppercase;
 }
 
-.general-sub {
+.footer-info {
     font-family: "Exo", sans-serif;
     font-weight: 400;
     color: #fafafa;
@@ -141,7 +141,7 @@ p {
     text-align: center;
 }
 
-/* ---------------------------------------------Media Queries*/
+/* ---------------------------------------------product-list*/
 
 .table {
     width: 70%;
@@ -168,8 +168,38 @@ table, th, td {
     padding-bottom: 20px;
 }
 
+/* ---------------------------------------------contact*/
 
-/* ---------------------------------------------main-body*/
+h5 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+.order-form {
+    background-color: #D1cccb;
+    color: #000000;
+}
+
+.contact-info {
+    background-color: #c7c1c0;
+    color: #000000;
+    padding-top: 40px;
+    text-align: left;
+}
+
+input {
+    padding-top: 10px;
+     background-color: #D1cccb;
+}
+
+/* ---------------------------------------------media queries*/
 
 @media(min-width: 992px) {
     .center-form {
