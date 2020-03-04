@@ -56,30 +56,24 @@ h1{
 
 /* ---------------------------------------------hero image*/
 
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url("../images/quarry3.jpg") no-repeat center center;
-    background-size: cover;
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+@keyframes slideshow {
+	10% {left: 0;}
+	20% {left: 0;}
+	30% {left: 0;}
+	40% {left: -100%;}
+	50% {left: -100%;}
+	60% {left: -100%;}
+	70% {left: -200%;}
+	80% {left: -200%;}
+	90% {left: -200%;}
+	100% {left: -200%}
 }
 
-#hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-}
 
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1)
-    }
-}
+#slider{overflow:hidden;width:100%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
+#slider figure img{width:33.33%;height:700px;float:left;}
+#slider figure{position:relative;width:300%;margin:0;left:0;text-align:left;animation:20s slideshow infinite}
+@media screen and (max-width: 767px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
 
 /* ---------------------------------------------about/meet*/
 
@@ -103,21 +97,30 @@ img {
 
 .about {
     padding-bottom: 25px;
-    background-color: #D1cccb;
+    background-color: #3399ff;
     color: #000000;
 }
 
 .meet-all {
-    background-color: #c7c1c0;
+    background-color: #4d94ff;
     color: #000000;
+}
+
+.about-home {
+    background-color: #3399ff;
+    color: #000000;
+    width: 50%;
+    padding-top: 0;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 /* ---------------------------------------------footer*/
 
 footer {
-    color: #fafafa;
+    color: #000000;
     padding-top: 25px;
-    background-color: #000000;
+    background-color: #bfbfbf;
     display: inline-block;
     vertical-align: top;
 }
@@ -129,7 +132,7 @@ footer {
 .footer-info {
     font-family: "Exo", sans-serif;
     font-weight: 400;
-    color: #fafafa;
+    color: #000000;
     text-align: center;
 }
 
@@ -141,7 +144,7 @@ p {
     text-align: center;
 }
 
-/* ---------------------------------------------product-list*/
+/* ---------------------------------------------product list/order form*/
 
 .table {
     width: 70%;
@@ -149,7 +152,7 @@ p {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #c7c1c0;
+    background-color: #3399ff;
     color: #000000;
     border-collapse: collapse;
 }
@@ -168,6 +171,7 @@ table, th, td {
     padding-bottom: 20px;
 }
 
+
 /* ---------------------------------------------contact*/
 
 h5 {
@@ -182,22 +186,19 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
-.order-form {
-    background-color: #D1cccb;
-    color: #000000;
+.form-queries {
+    display: block;
+    text-align: center;
 }
 
-.contact-info {
-    background-color: #c7c1c0;
-    color: #000000;
-    padding-top: 40px;
+.form {
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: left;
+    width: 50%;
 }
 
-input {
-    padding-top: 10px;
-     background-color: #D1cccb;
-}
 
 /* ---------------------------------------------media queries*/
 
