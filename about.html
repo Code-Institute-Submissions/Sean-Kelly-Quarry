@@ -10,127 +10,147 @@
     <title>Sean Kelly Quarry</title>
 </head>
 <body>
-    <header>            <!-- inspired by love running mini project-->
-        <a href="index.html">  
-            <h1 id="logo">Sean Kelly Quarry ltd</h1>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="product-list.html">Product List</a>
-                </li>
-                <li>
-                    <a class="active" href="about.html">About Us</a>
-                </li>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-            </ul>
-        </nav>          
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">           <!-- Navbar taken from bootstap -->
+            <a class="navbar-brand" href="#">Sean Kelly Quarry LTD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="product-list.html">Product List</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <div id="slider">
-        <figure>
-            <img src="assets/images/quarry.jpg" />
-            <img src="assets/images/quarry1.jpg" />
-            <img src="assets/images/quarry2.jpg" />
-        </figure>
-    </div>
-    <section>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm about">
-                <h3>About:</h3>
-                <p>Sean Kelly Quarries Ltd is a family run business, established in 1982 to supply
-                aggregate materials to the local road, farm and building sectors. Based two miles outside of Cootehill, the quarry is ideally situated to supply Monaghan, Cavan, Louth and Meath.
-                As part of the Cootehill formation the quarried stone is predominantly a strong dense Greywacke. From this a full 
-                range of high quality aggregates is manufactured to the strictest of standards giving customers the assurance of a
-                quality product</p>
+    <section class="container-fluid about">
+        <div>
+            <h2>About us:</h2>
+            <div class="row about-info">
+                <div class="col-sm-4 history">
+                    <h4 class="heading">Histroy</h4>
+                    <p>Founded in 1982 by John Kelly, who was the only employee at the time, it was a humble begining.
+                    We only offered one product, Shale Rock, and our main customers were local farmers. We have since 
+                    added a further 13 new products to choose from and have expanded into the consturction and road building sectors.</p>
+                </div>
+                <div class="col-sm-4 who-we-are">
+                    <h4 class="heading">Who we are?</h4>
+                    <p>We are a small family run business, located in a rural area two miles outside of Cootehill. We take great pride
+                    in the fact that we are a local business and try to get to know each customer individually so we can tailor our product 
+                    to their needs.</p>
+                </div>
+                <div class="col-sm-4 what-we-do">
+                    <h4 class="heading">What we do?</h4>
+                    <p>We take only the finest blue Shale, crush and screen it into the various different product sizes, then we perform various tests 
+                    (includin liguid limit and pyrite tests) to ensure that we only deliever the highest quality products. the tests mentioned above
+                    are available on request.</p>
+                </div>
             </div>
-            <div class="col-sm meet-all">
-                <h3>Meet:</h3>
-                <img src="assets/images/profile-placeholder.jpg" alt="profile pic" class="center"></img>     <!-- image taken from sltravelbeltize.com -->
-                <p class="meet">Name: Fintan Nulty</p>
-                <p class="meet">Working Here: 20 years</p>
-                <p class="meet">Position: digger/loading shovel operator</p>
-                <p class="meet">Contact: 0871234567</p>
-            </div>
-            <div class="col-sm meet-all">
-                <h3>Meet:</h3>
-                <img src="assets/images/profile-placeholder.jpg" alt="profile pic" class="center"></img>     <!-- image taken from sltravelbeltize.com -->
-                <p class="meet">Name: Anne Kelly</p>
-                <p class="meet">Working Here: 11 years</p>
-                <p class="meet">Position: Office worker/accountant</p>
-                <p class="meet">Contact: 0871234567</p>
-            </div>
-          </div>
         </div>
     </section>
-    <footer class="container-fluid">                         <!-- inspired by UCD resume mini project-->
-        <div id="footer-details" class="row">
-            <div class="col-sm-4">
-                <h5 class="uppercase footer-info">Contact information:</h5>
-                <p class="inline-block">
-                    Need to contact one of our staff?
-                </p>
-                <p><i class="fa fa-phone"></i>  0868578859/0495556483</p>
-                <p><i class="fa fa-envelope-square"></i>  seankellyquarry@gmail.com</p>
-                <p><i class="fa fa-location-arrow"></i>   Ballynahia, Lisnalong Co.Monaghan</p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase footer-info">Petrographic results</h5>
-                <p class="inline-block">
-                    Need a printable version of our Liquid Limit and our petrographic test results? Download it here.
-                    <a href="#" target="_blank">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        <span class="sr-only">Download link.</span>
+    <section class="container-fluid">
+        <div class="our-team">
+            <h2>Our Team</h2>
+            <div class="row">
+                <div class="col-sm-4 team-border" style="display: inline-block; text-align: center;">
+                    <img src="assets/images/sean.jpeg" class="team"></img>      <!-- image taken from google images -->
+                    <p class="team">Name: Sean Kelly</p>
+                    <p class="team">Position: Co.Founder</p>
+                    <p class="team">Number: 0868578859</p>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
                     </a>
-                </p>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-sm-4 team-border" style="display: inline-block; text-align: center;">
+                    <img src="assets/images/fintan.jpg" class="team"></img>     <!-- image taken from google images -->
+                    <p class="team">Name: Fintan Nulty</p>
+                    <p class="team">Position: Digger/Loading Shovel operator</p>
+                    <p class="team">Number: 0861234567</p>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-sm-4 team-border" style="display: inline-block; text-align: center;">
+                    <img src="assets/images/anne.jpg" class="team"></img>       <!-- image taken from google images -->
+                    <p class="team">Name: Anne Kelly</p>
+                    <p class="team">Position: Office worker/Accountant</p>
+                    <p class="team">Number: 0879674302</p>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a target="_blank" href="#">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase footer-info">Social Links</h5>
+        </div>
+    </section>
+    <footer class="container-fluid">                         <!-- inspired by UCD resume mini project with code institute-->
+        <div id="footer-details" class="row">
+            <div class="col-sm">
+                <h4 class="uppercase footer-info">Social Links</h4>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">LinkedIn</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">pinterest</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <i class="fa fa-youtube fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">Youtube</span>
                         </a>
                     </li>
+                    <p class="copyright">Copyright &#169; Sean Kelly Quarry LTD</p>
+                    <p>Website by Joseph Kelly</p>
                 </ul>
             </div>
         </div>
-    </footer>                                    <!-- inspired by UCD resume mini project-->
+    </footer>    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

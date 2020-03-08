@@ -10,36 +10,33 @@
     <title>Sean Kelly Quarry</title>
 </head>
 <body>
-    <header>                            <!-- inspired by love running mini project-->
-        <a href="index.html">
-            <h1 id="logo">Sean Kelly Quarry ltd</h1>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a class="active" href="product-list.html">Product List</a>
-                </li>
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-            </ul>
+    <header>                           <!-- Navbar taken from bootstap -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Sean Kelly Quarry LTD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="product-list.html">Product List</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div id="slider">
-        <figure>
-            <img src="assets/images/quarry.jpg" />
-            <img src="assets/images/quarry1.jpg" />
-            <img src="assets/images/quarry2.jpg" />
-        </figure>
-    </div>
-    <section>
-        <h3 class="product-heading">Products avalaiable and Price List</h3>
+    <section class="container-fluid">
+        <h2 class="product-heading">Products avalaiable and Price List</h2>
+        <p class="product-note">All of our products go through a series of rigorous tests to ensure they are of the highest standard.</p>
         <table class="table" align="center">
            <tr>
                <th>
@@ -155,14 +152,15 @@
            </tr>
         </table>
          <h4 class="product-disclaimer">*Please note product prices may vary</h4>
-       <div class="queries-form">
+       <div class="order-form">
            <h3>Need to place an order?</h3>
            <h5>Fill in the form below and we will process your order.</h5>
            <form class="form">
-               <input type="text" name="name" id="name" class="form-control" placeholder="Fullname" required/>
-               <input type="tel" name="number" id="phonenumber" class="form-control" placeholder="Phone Number" required/>
-               <input type="text" name="address" id="address" class="form-control" placeholder="Address" required/>
-               <input type="text" name="product" id="product" class="form-control" placeholder="Product" required/>
+               <input type="text" name="name" id="name" class="form-control input" placeholder="Fullname" required/>
+               <input type="tel" name="number" id="phonenumber" class="form-control input" placeholder="Phone Number" required/>
+               <input type="text" name="address" id="address" class="form-control input" placeholder="Address" required/>
+               <input type="text" name="product" id="product" class="form-control input" placeholder="Product" required/>
+               <input type="text" name="tonne" id="tonne" class="form-control input" placeholder="Amount needed per tonne" required/>
                <div class="form-row text-center">
                    <div class="col">
                        <button type="submit" class="btn btn-secondary">Place order</button>
@@ -171,69 +169,55 @@
            </form>
        </div>
     </section>
-    <footer class="container-fluid">                         <!-- inspired by UCD resume mini project-->
+    <footer class="container-fluid">                         <!-- inspired by UCD resume mini project with code institute-->
         <div id="footer-details" class="row">
-            <div class="col-sm-4">
-                <h5 class="uppercase footer-info">Contact information:</h5>
-                <p class="inline-block">
-                    Need to contact one of our staff?
-                </p>
-                <p><i class="fa fa-phone"></i>  0868578859/0495556483</p>
-                <p><i class="fa fa-envelope-square"></i>  seankellyquarry@gmail.com</p>
-                <p><i class="fa fa-location-arrow"></i>   Ballynahia, Lisnalong Co.Monaghan</p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase footer-info">Petrographic results</h5>
-                <p class="inline-block">
-                    Need a printable version of our Liquid Limit and our petrographic test results? Download it here.
-                    <a href="#" target="_blank">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        <span class="sr-only">Download link.</span>
-                    </a>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase footer-info">Social Links</h5>
+            <div class="col-sm">
+                <h4 class="uppercase footer-info">Social Links</h4>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">LinkedIn</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">pinterest</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <i class="fa fa-youtube fa-3x" aria-hidden="true"></i>
                             <span class="sr-only">Youtube</span>
                         </a>
                     </li>
+                    <p class="copyright">Copyright &#169; Sean Kelly Quarry LTD</p>
+                    <p>Website by Joseph Kelly</p>
                 </ul>
             </div>
         </div>
-    </footer>                                    <!-- inspired by UCD resume mini project-->
+    </footer>   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
