@@ -29,6 +29,10 @@ body {
 /* ---------------------------------------------hero image*/
 
 
+.small-caption {
+    color: #000000;
+}
+
 body {
   padding-bottom: 3rem;
   color: #5a5a5a;
@@ -40,12 +44,6 @@ body {
   z-index: 10;
 }
 
-.caption {
-    background-color: rgb(30, 97, 222, 0.4);
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .carousel-item {
   height: 40rem;
@@ -153,24 +151,29 @@ h1, h3, h2, h4, h5 {
 
 .history {
     color: #000000;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
 }
 
 .who-we-are {
     color: #000000;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
 }
 
 .what-we-do {
     color: #000000;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
 }
 
 .heading {
-    padding-top: 10px;
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 10px
 }
 
 
@@ -280,9 +283,9 @@ button[type="submit"] {
 
 .form {
     display: inline-block;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
 }
 
 .input-query {
