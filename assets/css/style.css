@@ -13,6 +13,10 @@ body {
     color: #777777;
 }
 
+.navbar-custom {
+    background-color: #333333;
+}
+
 
 #menu a:hover {
     border-bottom: 1px solid #777777;
@@ -24,36 +28,112 @@ body {
 
 /* ---------------------------------------------hero image*/
 
-@keyframes slideshow {
-	10% {left: 0;}
-	20% {left: 0;}
-	30% {left: 0;}
-	40% {left: -100%;}
-	50% {left: -100%;}
-	60% {left: -100%;}
-	70% {left: -200%;}
-	80% {left: -200%;}
-	90% {left: -200%;}
-	100% {left: -200%}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 3rem;
+  color: #5a5a5a;
 }
 
 
-#slider{overflow:hidden;width:100%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
-#slider figure img{width:33.33%;height:700px;float:left;}
-#slider figure{position:relative;width:300%;margin:0;left:0;text-align:left;animation:20s slideshow infinite}
-@media screen and (max-width: 767px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 40rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption h3 {
+    margin-bottom: 20rem;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
 
 /* ---------------------------------------------about/meet*/
 
-h3, h2, h4, h5 {
+h1, h3, h2, h4, h5 {
     font-family: "Exo", sans-serif;
     font-weight: bold;
     text-align: center;
     color: #000000;
 }
 
+.about-heading {
+    border-bottom: 1px solid;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
 .about {
-    background-color: #3399ff;
     color: #000000;
     padding-top: 10px;
     text-align: center;
@@ -74,16 +154,11 @@ h3, h2, h4, h5 {
 .team {
    margin-top: 5px;
    margin-bottom: 5px;
+   color: #000000;
    font-family: "Exo", sans-serif;
 }
 
-.team-border {
-    overflow: hidden;
-    border: outset 2px;
-    border-radius: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 
 .meet-icon {
     margin-top: 5px;
@@ -91,21 +166,21 @@ h3, h2, h4, h5 {
 }
 
 .history {
-    border: outset;
-    border-radius: 100px;
-    border-color: #000000;
+    color: #000000;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .who-we-are {
-    border: outset;
-    border-radius: 100px;
-    border-color: #000000;
+    color: #000000;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .what-we-do {
-    border: outset;
-    border-radius: 100px;
-    border-color: #000000;
+    color: #000000;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .heading {
@@ -116,15 +191,16 @@ h3, h2, h4, h5 {
 /* ---------------------------------------------footer*/
 
 footer {
-    color: #000000;
+    color: #fafafa;
     padding-top: 25px;
-    background-color: #bfbfbf;
+    background-color: #333333;
     display: inline-block;
 }
 
 .footer-info {
     font-weight: bold;
     text-align: center;
+    color: #fafafa
 }
 
 .list-inline-item {
@@ -138,14 +214,16 @@ footer {
 
 .social-links {
     text-align: center;
+    color: #fafafa;
 }
 
 p {
     text-align: center;
-    color: #000000;
+    color: #fafafa;
 }
 
 .copyright { 
+    padding-top: 7px;
     margin-bottom: 0;
 }
 
@@ -157,22 +235,23 @@ p {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #3399ff;
     color: #000000;
     border-collapse: collapse;
 }
 
 table, th, td {
   border: 1px solid black;
+  text-align: center;
 }
 
 .product-heading {
-    margin-top: 10px;
+    margin-top: 30px;
     color: #000000;
 }
 
 .product-note {
     font-size: large;
+    color: #000000;
 }
 
 .product-disclaimer {
@@ -187,37 +266,23 @@ table, th, td {
     padding-top: 20px;
     display: block;
     text-align: center;
-    background-color: #4d94ff;
 }
 
 /* ---------------------------------------------contact*/
-
-
-.mapouter{
-    position: relative;
-    text-align: center;
-    height: 400px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.gmap_canvas {
-    overflow: hidden;
-    background: none!important;
-    height: 400px;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    border: outset;
-    border-color: #3399ff;;
-}
 
 .contact-info {
     font-family: "Exo", sans-serif;
     color: #000000;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 30px;
+    margin-right: 40px;
 }
+
+.contact-details { 
+    color: #000000;
+    margin-right: 40px;
+}
+
 
 button[type="submit"] {
     margin-top: 15px;
@@ -234,6 +299,11 @@ button[type="submit"] {
     width: 70%;
 }
 
+.input-query {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .input {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -241,15 +311,9 @@ button[type="submit"] {
 
 .contact-section {
     margin-top: 25px;
-    background-color: #3399ff;
     padding-bottom: 20px;
 }
 
-.contact {
-    border: outset;
-    border-radius: 200px;
-    border-color: #000000;
-}
 
 .form-section {
     padding-top: 20px;
